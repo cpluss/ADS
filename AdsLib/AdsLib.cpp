@@ -42,6 +42,8 @@ static AmsRouter& GetRouter()
         } \
 } while (false)
 
+extern "C" {
+
 long AdsAddRoute(const AmsNetId ams, const char* ip)
 {
     try {
@@ -331,4 +333,6 @@ long AdsSyncSetTimeoutEx(long port, uint32_t timeout)
 {
     ASSERT_PORT(port);
     return GetRouter().SetTimeout((uint16_t)port, timeout);
+}
+
 }

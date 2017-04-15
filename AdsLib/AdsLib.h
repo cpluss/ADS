@@ -25,6 +25,8 @@
 
 #include "AdsDef.h"
 
+extern "C" {
+
 /**
  * Add new ams route to target system
  * @param[in] ams address of the target system
@@ -213,5 +215,7 @@ long AdsSyncGetTimeoutEx(long port, uint32_t* timeout);
  * @return [ADS Return Code](http://infosys.beckhoff.de/content/1033/tc3_adsdll2/html/ads_returncodes.htm?id=17663)
  */
 long AdsSyncSetTimeoutEx(long port, uint32_t timeout);
+
+}
 
 #endif /* #ifndef _ADSLIB_H_ */
