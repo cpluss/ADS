@@ -254,6 +254,7 @@ struct AmsNetId {
     operator bool() const;
 #endif
 };
+typedef struct AmsNetId AmsNetId;
 
 /**
  * @brief The complete address of an ADS device can be stored in this structure.
@@ -265,6 +266,7 @@ struct AmsAddr {
     /** AMS Port number */
     uint16_t port;
 };
+typedef struct AmsAddr AmsAddr;
 
 #ifdef __cplusplus
 bool operator<(const AmsAddr& lhs, const AmsAddr& rhs);
@@ -368,6 +370,7 @@ struct AdsNotificationAttrib {
         uint32_t dwChangeFilter;
     };
 };
+typedef struct AdsNotificationAttrib AdsNotificationAttrib;
 
 /**
  * @brief This structure is also passed to the callback function.
@@ -382,6 +385,7 @@ struct AdsNotificationHeader {
     /** Number of bytes transferred. */
     uint32_t cbSampleSize;
 };
+typedef struct AdsNotificationHeader AdsNotificationHeader;
 
 /**
  * @brief Type definition of the callback function required by the AdsSyncAddDeviceNotificationReqEx() function.
