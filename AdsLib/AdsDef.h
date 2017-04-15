@@ -286,6 +286,7 @@ struct AdsVersion {
     /** Build number */
     uint16_t build;
 };
+typedef struct AdsVersion AdsVersion;
 
 enum ADSTRANSMODE {
     ADSTRANS_NOTRANS = 0,
